@@ -10,11 +10,23 @@
 </head>
 <body>
     <div class="body">
+        <div class="form-container" id="myForm">
+            <div class="form-add">
+                <h1>New Book</h1>
+                <label for="title">Title</label>
+                <input type="text" name="BookTitle" id="booktitle" required>
+                <label for="pages">Page Count</label>
+                <input type="text" name="pages" id="pages" required>
+                <button class="add" onclick="closeForm()">Add Book</button>
+                <button class="cancel" onclick="closeForm()">Cancel</button>
+            </div>
+        </div>
         <div class="header">
             <h1>Library</h1>
         </div>
         <div class="content">
             <div class="library">
+                <div class="add-button" onclick="openForm()">Add Book</div>
                 <h1>Content</h1>
                 <input type="text" name="bookName" id="book">
                 <button id="btn">Hello</button>

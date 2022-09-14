@@ -13,8 +13,8 @@ function addBookToLibrary(name) {
 function display(){
     const books = document.querySelector(".books")
 
-    while (books.firstChild){
-        books.removeChild(books.firstChild);
+    while (books.lastChild){
+        books.removeChild(books.lastChild);
     }
 
     library.forEach(library => {
@@ -36,3 +36,11 @@ btn.addEventListener('click', ()=>{
     console.log("hello")
     display();
 })
+
+function openForm(){
+    document.getElementById("myForm").style.display = "block";
+}
+function closeForm(){
+    document.getElementById("myForm").style.display = "none";
+
+}

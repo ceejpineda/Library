@@ -8,13 +8,18 @@ html, body{
     padding: 0;
 }
 h1{
-    padding: 0;
+    padding: 15px;
     margin: 0;
-}
+    color: white;
+    text-shadow: 3px 0px grey;
+    letter-spacing: 1px;
+}   
 .header{
     height: 8vh;
     width: 100%;
-    background-color: #189AB4;
+    display: flex;
+    align-items: center;
+    background-color: #0A0708;
 }
 .body{
     display: flex;
@@ -29,10 +34,45 @@ h1{
 .library{
     width: 75vw;
     height: 92vh;
-    background-color: #D4F1F4;
+    background-color: #B1B1B1;
 }
 .info{
     width: 25vw;
     height: 92vh;
-    background-color: #75E6DA;
+    background-color: #747474;
+}
+.books{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    margin: auto;
+    border: 2px solid black;
+    height: 33vh;
+    width: 22vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-add{
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: thin solid #888
+    width: 80%;
+}
+.form-container{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
