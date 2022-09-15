@@ -29,9 +29,9 @@ function display(){
     })
 }
 
-const btn = document.querySelector("#btn");
+const btn = document.querySelector("#add");
 btn.addEventListener('click', ()=>{
-    newbook = document.querySelector("#book");
+    newbook = document.querySelector("#booktitle");
     addBookToLibrary(newbook.value);
     console.log("hello")
     display();
